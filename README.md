@@ -1,3 +1,3 @@
 # OrderedArrayList
 ## Discussion
-First, we have to make the NoNullArrayList, it's going to extend ArrayList. A problem we encountered was how to make the constructor for NoNullArrayList.
+First, we have to make the NoNullArrayList, it's going to extend ArrayList. A problem we encountered was how to make the constructor for NoNullArrayList. Initially, when we first started we got confused on whether the null values used as placeholders in the ArrayList were included in the no null values. We thought that we should initiatlize the arraylist with 0 elements that way there wouldn't be any extra nulls. However, we realized that the null placeholders didn't really matter because whenever the arraylist resized itself, there'd be way too many null placeholders. Aftwerwards, we got stuck on whether we used super<T>() or super(), in which we found the latter worked, through trial and error.
