@@ -5,6 +5,10 @@ public class NoNullArrayList<T> extends ArrayList<T> {
     super();
   }
 
+  public NoNullArrayList(int capacity) {
+    super(capacity);
+  }
+
   public boolean add(T element) {
     this.checkVoid(element);
     return super.add(element);

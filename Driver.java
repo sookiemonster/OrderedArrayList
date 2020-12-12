@@ -42,5 +42,24 @@ public class Driver {
       System.out.println("Correct error. Add(int index, element)");
     }
 
+    //Second constructor test
+    System.out.println();
+    System.out.println("Second constructor tests:");
+    NoNullArrayList<Integer> c = new NoNullArrayList<Integer>(10);
+    c.add(9);
+    System.out.println(c);
+    c.add(0, 8);
+    System.out.println(c);
+
+    try {
+      c.add(null);
+    } catch (IllegalArgumentException e) {
+      System.out.println("Correct error. Add(element)");
+    }
+    try {
+      c.add(1, null);
+    } catch (IllegalArgumentException e) {
+      System.out.println("Correct error. Add(int index, element)");
+    }
   }
 }
