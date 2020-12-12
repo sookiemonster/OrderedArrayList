@@ -118,6 +118,13 @@ public class Driver {
     foo.add("a");
     System.out.println(foo);
 
+    System.out.println();
+    p.add(0, 5);
+    System.out.println(p);
+    p.add(1, 4);
+    System.out.println(p);
+    p.add(0, 358);
+    System.out.println(p);
 
 
 
