@@ -73,5 +73,15 @@ public class Driver {
     } catch (IllegalArgumentException e) {
       System.out.println("Correct error. Set(int index, element)");
     }
+
+    // OrderedArrayList testing-------------------
+    System.out.println();
+    System.out.println("OrderedArrayList testing: ");
+    OrderedArrayList<Integer> n = new OrderedArrayList<Integer>();
+    OrderedArrayList<Integer> p = new OrderedArrayList<Integer>(10);
+
+
+
+
   }
 }
