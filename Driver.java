@@ -61,5 +61,17 @@ public class Driver {
     } catch (IllegalArgumentException e) {
       System.out.println("Correct error. Add(int index, element)");
     }
+
+    //Set() Tests
+    System.out.println();
+    System.out.println("Set() tests:");
+    System.out.println(c);
+    System.out.println("8: " + c.set(0, 27));
+    System.out.println(c);
+    try {
+      c.set(0, null);
+    } catch (IllegalArgumentException e) {
+      System.out.println("Correct error. Set(int index, element)");
+    }
   }
 }
