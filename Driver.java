@@ -125,9 +125,9 @@ public class Driver {
     System.out.println(p);
     p.add(0, 358);
     System.out.println(p);
-    p.set(2, -20);
+    System.out.println(p.set(2, -20));
     System.out.println(p);
-    p.set(1, 35893);
+    System.out.println(p.set(1, 35893));
     System.out.println(p);
 
 
