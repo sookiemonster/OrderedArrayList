@@ -9,7 +9,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
     super(capacity);
   }
 
-  public int getOrder(T item) {
+  private int getOrder(T item) {
     if (this.size() == 0) {
       return 0;
     }
@@ -19,5 +19,10 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
       }
     }
     return this.size();
+  }
+
+  public boolean add(T element) {
+    super.add(this.getOrder(element), element);
+    return true;
   }
 }
