@@ -80,6 +80,25 @@ public class Driver {
     OrderedArrayList<Integer> n = new OrderedArrayList<Integer>();
     OrderedArrayList<Integer> p = new OrderedArrayList<Integer>(10);
 
+    try {
+      OrderedArrayList<String> foo = new OrderedArrayList<String>();
+    } catch (ClassCastException e) {
+      System.out.println("Strings are not comparable.");
+    }
+
+    System.out.println(n.getOrder(5));
+    n.add(5);
+    System.out.println(n);
+    System.out.println("6 location: " + n.getOrder(6));
+    System.out.println("4 location: " + n.getOrder(4));
+    n.add(4);
+    n.add(6);
+    System.out.println(n);
+    System.out.println("5 location: " + n.getOrder(5));
+
+
+
+
 
 
 
