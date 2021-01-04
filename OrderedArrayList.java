@@ -10,6 +10,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
   }
 
   private int getOrder(T item) {
+    checkVoid(item);
     if (this.size() == 0) {
       return 0;
     }
@@ -31,8 +32,15 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
   }
 
   public T set(int index, T element) {
+    checkVoid(element);
     T temp = this.remove(index);
     this.add(element);
     return temp;
+  }
+
+  private void checkVoid(T element) throws IllegalArgumentException {
+    if (element == null) {
+      throw new IllegalArgumentException ("\nReceived: " + element + " || Cannot add null to NoNullArrayList.");
+    }
   }
 }
